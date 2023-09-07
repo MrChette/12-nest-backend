@@ -19,6 +19,9 @@ async function bootstrap() {
 
   //Para localhost
   //await app.listen(3000);
+  const port = process.env.PORT ?? 3000;
+  console.log(`Railway running in port: ${port}`)
+  
 
 
   await app.listen( process.env.PORT ?? 3000);
